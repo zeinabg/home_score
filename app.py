@@ -12,6 +12,7 @@ import geopandas as gpd
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 def create_geofile():
   zip_shape = gpd.read_file('data/cb_2018_us_zcta510_500k/cb_2018_us_zcta510_500k.shp').rename(columns={'ZCTA5CE10': 'zipcode'})
