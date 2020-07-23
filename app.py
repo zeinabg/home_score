@@ -50,7 +50,7 @@ def render_map(metric):
   )
 
 
-create_geofile()
+# create_geofile()
 crime_map = render_map('crime')#.update_layout(margin={"r":0,"t":20,"l":0,"b":20})
 health_map = render_map('health')#.update_layout(margin={"r":20,"t":20,"l":20,"b":20})
 
